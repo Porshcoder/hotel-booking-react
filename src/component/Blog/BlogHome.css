@@ -1,0 +1,122 @@
+.blog img {
+    width: 300px;
+    height: 100%;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    
+  }
+  .blog .items {
+    padding: 30px;
+    background-color: #fff;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    transition: 0.5s ease-in-out;
+    height: 100%;
+  }
+  .category span {
+    font-size: 14px;
+    color: grey;
+    transition: 0.5s ease-in-out;
+  }
+  .category label {
+    background-color: orange;
+    font-size: 13px;
+    color: navy;
+    padding: 5px 15px;
+    border-radius: 5px;
+    transition: 0.5s ease-in-out;
+  }
+  .blog .items h3 {
+    margin: 5px 0 10px 0;
+    font-weight: 500;
+    transition: 0.5s ease-in-out;
+  }
+  .blog .items p {
+    font-size: 13px;
+    color: grey;
+    margin-bottom: 10px;
+    transition: 0.5s ease-in-out;
+  }
+  .blog .items a {
+    color: black;
+    font-weight: 500;
+    font-size: 14px;
+    transition: 0.5s ease-in-out;
+  }
+  .blog .items a i {
+    color: white;
+    transition: 0.5s ease-in-out;
+  }
+  .blog .items:hover {
+    background-color: #0f0c29;
+    background: -webkit-linear-gradient(to left,#24243e,#302b63,#0f0c29);
+    background:linear-gradient(to left,#24243e,#302b63,#0f0c29);
+    cursor: pointer;
+    
+  }
+  .blog .items:hover h3,
+  .blog .items:hover span,
+  .blog .items:hover a,
+  .blog .items:hover a i,
+  .blog .items:hover p {
+    color: white;
+  }
+  .blog .items:hover label {
+    background-color: #fff;
+    color: navy;
+    cursor: pointer;
+  }
+  .blog button{
+    padding: 10px;
+    border-radius: 20px;
+    background-color: orange;
+    color:navy;
+  }
+  .blog button:hover{
+    background-color: #fff;
+    color: navy;
+  }
+
+  /*---------blog single page------*/
+  .category-list {
+    color: black;
+  }
+  .category-list h1 {
+    font-size: 30px;
+  }
+  .category-list hr {
+    border: none;
+    border-bottom: 3px dotted orange;
+    width: 100px;
+  }
+  .category-list ul {
+    margin-top: 20px;
+  }
+  .category-list ul li {
+    margin-bottom: 15px;
+    transition: 0.5s;
+  }
+  .category-list ul li:hover {
+    color: navy;
+    transform: translateX(10px);
+    cursor: pointer;
+  }
+  .category-list i {
+    color: orange;
+    margin-right: 20px;
+  }
+  /*---------blog single page------*/
+  @media screen and (max-width: 860px) {
+    .blog .grid {
+      grid-template-columns: repeat(2, 1fr);
+      overflow-x: hidden;
+      width: 100%;
+    }
+  }
+  @media screen and (max-width: 1024px) {
+    .blog .grid {
+      grid-template-columns: repeat(2, 2fr);
+      overflow-x: hidden;
+      width: 100%;
+    }
+  }

@@ -1,0 +1,24 @@
+.collection img {
+    filter:brightness(100%);
+    transition: 0.5s;
+  }
+  .collection img:hover {
+    filter: grayscale(0);
+  }
+
+  @media screen and (max-width: 860px) {
+    .collection .grid {
+      grid-template-columns: repeat(1, 1fr);
+      overflow-x: hidden;
+      width: 100%;
+    }
+  }
+
+  @media screen and (max-width: 448px) {
+    .collection {
+      filter:brightness(100%);
+      transition: 0.5s;
+      display: none;
+    }
+    
+  }

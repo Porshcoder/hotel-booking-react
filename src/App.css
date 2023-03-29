@@ -1,38 +1,212 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  font-family: 'Poppins', sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+a{
+  text-decoration: none;
+  
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.flex{
   display: flex;
-  flex-direction: column;
-  align-items: center;
+}
+
+.flex_space{
+  display: flex;
+  justify-content: space-between;
+  color: rgb(43, 43, 94);
+}
+
+.container{
+  max-width: 85%;
+  margin: auto;
+}
+
+li{
+  list-style-type: none;
+}
+
+button{
+  background-color: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.primary-btn{
+  padding: 10px 20px;
+  background-color: orange;
+  color: navy;
+  font-weight: 400;
+  transition: 0.5s;
+  border-radius: 30px;
+  border: 1px solid orange;
+}
+
+.primary-btn:hover{
+  background-color: white;
+  color: navy;
+}
+
+.secondary-btn{
+  padding: 10px 20px;
+  background-color: orange;
+  color: navy;
+  font-weight: 400;
+  transition: 0.5s;
+  border-radius: 20px;
+  margin-top: 30px;
+}
+.secondary-btn:hover{
+  background-color: navy;
+  color: #fff;
+}
+.logo img{
+  width: 60%;
+  height: 60%;
+
+}
+
+.control-btn button {
+  background-color: rgba(255, 255, 255, 0.3);
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  border-radius: 50%;
+  color: #fff;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.control-btn i{
+  background-color: #0f0c29;
+    background: -webkit-linear-gradient(to left,#24243e,#302b63,#0f0c29);
+    background:linear-gradient(to left,#24243e,#302b63,#0f0c29);
+  width: 45px;
+  height: 45px;
+  margin: auto;
+  text-align: center;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 30px;
+  
 }
 
-.App-link {
-  color: #61dafb;
+input {
+  width: 100%;
+  padding: 20px;
+  outline: none;
+  border: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* .row {
+  width: 50%;
+} */
+.top {
+  margin-top: 100px;
+  
+}
+.mtop {
+  margin-top: 50px;
+}
+.heading {
+  text-align: center;
+  padding: 50px 0 50px 0;
+}
+.heading h1 {
+  font-size: 35px;
+  font-weight: 500;
+}
+.heading .line {
+  width: 18%;
+  margin: auto;
+  margin-top: 20px;
+  border-bottom: 2px dashed navy;
+  position: relative;
+}
+.heading .line::after {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  background-color: orange;
+  border-radius: 50%;
+  top: -6px;
+  left: -20px;
+}
+.heading .line::before {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  background-color: orange;
+  border-radius: 50%;
+  top: -6px;
+  right: -20px;
+}
+.full_container {
+  max-width: 95%;
+  margin: auto;
+}
+.main-content {
+  width: 70%;
+}
+.side-content {
+  width: 30%;
+  margin-left: 40px;
+  
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  width: 30%;
+  margin-left: -2px;
+}
+.grid1 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+  width: 30%;
+  margin-left: -3px;
+}
+.icon {
+  margin-top: 20px;
+}
+.icon i {
+  background: #f5f5f5;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  border: 1px solid #e7e3e3;
+  border-radius: 5px;
+}
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 90%;
   }
-  to {
-    transform: rotate(360deg);
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    justify-content: center;
+  }
+  .main-content {
+    width: 100%;
+  }
+  .side-content {
+    width: 100%;
+    margin-left: 0px;
   }
 }

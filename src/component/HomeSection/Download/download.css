@@ -1,0 +1,51 @@
+.download {
+  background-color: #0f0c29;
+  background: -webkit-linear-gradient(to left,#24243e,#302b63,#0f0c29);
+  background:linear-gradient(to left,#24243e,#302b63,#0f0c29);
+    height: 85vh;
+    padding: 50px 0;
+    overflow: hidden;
+  }
+  .download h1 {
+    font-size: 40px;
+    color: aliceblue;
+  }
+  .download h3{
+    color: aliceblue;
+  }
+  .download ul {
+    margin: 20px 0;
+    
+  }
+  .download ul li {
+    margin: 5px 0;
+    font-size: 15px;
+    color: aliceblue;
+  }
+  .download .row img {
+    margin-right: 20px;
+  }
+  .download .row {
+    position: relative;
+    ;
+  }
+  .download .image {
+    position: relative;
+    left: 0%;
+    right: 0;
+  }
+  @media screen and (max-width: 860px) {
+    .download .flex_space {
+      flex-direction: column;
+      padding: 40px;
+    }
+    .download .row {
+      width: 100%;
+    }
+    .download .row2 {
+      display: none;
+    }
+    .download {
+      height: 60vh;
+    }
+  }

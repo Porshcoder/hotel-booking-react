@@ -1,0 +1,26 @@
+.desi .title {
+    margin: 0;
+    background-color: orange;
+  }
+  .desi h3 {
+    margin: 0;
+    padding: 15px 0 15px 0;
+    color: white;
+  }
+ 
+  @media screen and (max-width: 860px) {
+  
+    .desi .grid {
+      grid-template-columns: repeat(3, 2fr);
+      overflow-x: hidden;
+       width:95% ;
+    }
+  }
+  @media screen and (max-width: 448px) {
+  
+    .desi .grid {
+      grid-template-columns: repeat(1, 1fr);
+      overflow-x: hidden;
+       width:95% ;
+    }
+  }

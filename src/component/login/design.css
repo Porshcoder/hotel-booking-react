@@ -1,0 +1,77 @@
+.sign-box {
+    width: 40%;
+    margin: auto;
+    box-shadow: 0 2rem 3rem rgba(203, 200, 200, 0.861);
+    padding: 40px;
+    color: aliceblue;
+    border-radius: 30px;
+    /* background-color: #0f0c29;
+    background: -webkit-linear-gradient(to left,#24243e,#302b63,#0f0c29);
+    background:linear-gradient(to left,#24243e,#302b63,#0f0c29); */
+    
+  }
+  .forms form div {
+    margin: 10px 0;
+  }
+  .forms form .flex input {
+    width: 20px;
+    height: 20px;
+    margin-right: 15px;
+    
+  }
+  .forms p {
+    font-size: 13px;
+  }
+  .forms form label {
+    margin: 8px;
+  }
+  .forms form span {
+    margin-top: 10px;
+    color: crimson;
+    font-size: 13px;
+  }
+  .forms form button {
+    width: 100%;
+    margin: 20px 0;
+  }
+  .forms form a {
+    color: orange;
+    font-size: 13px;
+  }
+  
+  /*----------show-data---------*/
+  .show-data h1 {
+    color: navy;
+    margin: 0 0 20px 0;
+  }
+  .show-data h3 {
+    display: flex;
+    color: #000;
+  }
+  .show-data h3 p {
+    font-weight: 400;
+    margin-left: 5px;
+  }
+  .show-data .sign-box {
+    margin-top: 50px;
+    
+  }
+  /*----------show-data---------*/
+  @media screen and (max-width: 768px) {
+    .sign-box {
+      width: 80%;
+    }
+  }
+  .forms{
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(./image/product07.jpg);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+  }
+  input{
+    border-radius: 20px;
+  }
+  label{
+    color: white;
+  }
